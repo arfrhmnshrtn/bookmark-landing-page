@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Rubik:wght@400;500&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-link ul {
+  top: -10000px;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link ul.active {
+  top: 0;
+}
+.shape-mobile {
+  bottom: 0;
+  /* right: -40px; */
+}
+.shape-dekstop {
+  bottom: 0;
+  /* right: -60px; */
+}
+.jenis-browser {
+  height: 500px;
+}
+.dropdown-faq {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+.faq .answer {
+  display: none;
+}
+.faq .answer.active {
+  display: inherit;
+}
+
+@media only screen and (max-width: 1024px) {
+  .jenis-browser {
+    height: auto;
+  }
+  .dropdown-faq {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
